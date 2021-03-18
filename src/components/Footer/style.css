@@ -1,0 +1,18 @@
+.footer{
+  height: 80px;
+  background-color: #1C1C24;
+  color: #5F5F6F;
+  padding-top: 2%;
+
+}
+.footer ul{
+  display: flex;
+  flex-direction: row;
+}
+.footer ul li{
+  list-style: none;
+}
+
+.f-item{
+  flex-grow: 1;
+}

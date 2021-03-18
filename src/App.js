@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar/Component'
+import Footer from './components/Footer/Component'
+
+//PAGES
+import Dashboard from './pages/Dashoard';
 
 function App() {
+  const style = {
+    foot :{
+          position: 'absolute',
+          width: '100%',
+          bottom: 0
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="head">
+        <Navbar/> 
+      </div>
+      <div className="content m-5">
+          <Dashboard/>
+      </div>
+      <div className="foot">
+        <Footer />          
+      </div>
     </div>
   );
 }
